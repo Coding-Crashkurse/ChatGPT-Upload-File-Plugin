@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Datei Upload Injektor",
+  "version": "1.0",
+  "description": "Injiziert einen Datei-Upload-Button in die aktive Webseite",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
